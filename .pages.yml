@@ -3,36 +3,56 @@ media:
   output: /images
 
 collections:
-  - name: 案例展示
+  - name: 案例展示 (Portfolio)
     path: src/content/blog
     type: posts
     fields:
       - name: title
-        label: 标题
+        label: 项目名称
         type: string
       - name: description
-        label: 简介
+        label: 业务类别 (如：影视制作/活动策划)
         type: string
       - name: date
-        label: 发布日期
+        label: 完工日期
         type: date
-      - name: draft
-        label: 草稿
-        type: boolean
+      - name: image
+        label: 封面大图
+        type: image
       - name: body
-        label: 内容详情
+        label: 项目详细介绍 (支持中英文)
         type: rich-text
 
-  - name: 关于公司
+  - name: 业务范围 (Services)
+    path: src/content/work
+    type: posts
+    fields:
+      - name: company
+        label: 服务项目
+        type: string
+      - name: role
+        label: 核心优势
+        type: string
+      - name: dateStart
+        label: 开始日期
+        type: date
+      - name: dateEnd
+        label: 结束日期
+        type: date
+      - name: body
+        label: 业务详情描述
+        type: rich-text
+
+  - name: 关于公司与联系
     path: src/content/about
     type: page
     fields:
       - name: title
-        label: 标题
+        label: 页面标题
         type: string
       - name: description
-        label: 简介
+        label: 公司口号 (Slogan)
         type: string
       - name: body
-        label: 详细介绍
+        label: 公司简介/联系电话/地址
         type: rich-text
