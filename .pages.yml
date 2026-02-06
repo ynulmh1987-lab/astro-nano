@@ -1,0 +1,38 @@
+media:
+  input: public/images
+  output: /images
+
+collections:
+  - name: 案例展示
+    path: src/content/blog
+    type: posts
+    fields:
+      - name: title
+        label: 标题
+        type: string
+      - name: description
+        label: 简介
+        type: string
+      - name: date
+        label: 发布日期
+        type: date
+      - name: draft
+        label: 草稿
+        type: boolean
+      - name: body
+        label: 内容详情
+        type: rich-text
+
+  - name: 关于公司
+    path: src/content/about
+    type: page
+    fields:
+      - name: title
+        label: 标题
+        type: string
+      - name: description
+        label: 简介
+        type: string
+      - name: body
+        label: 详细介绍
+        type: rich-text
